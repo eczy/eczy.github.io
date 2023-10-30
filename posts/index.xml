@@ -1,23 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Evan Czyzycki</title>
-    <link>https://evanczyzycki.com/</link>
-    <description>Recent content on Evan Czyzycki</description>
+    <title>Posts on Evan Czyzycki</title>
+    <link>https://evanczyzycki.com/posts/</link>
+    <description>Recent content in Posts on Evan Czyzycki</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://evanczyzycki.com/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About</title>
-      <link>https://evanczyzycki.com/pages/about/</link>
-      <pubDate>Sun, 29 Oct 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://evanczyzycki.com/pages/about/</guid>
-      
-      <description>I received my undergrad in Computer Science at the University of Michigan in 2018, and I completed my masters in machine learning at UCLA in 2022. My research background is in machine learning for healthcare systems, but I currently work as an SRE supporting cloud systems.</description>
-      
-    </item>
-    
+    <lastBuildDate>Thu, 06 Feb 2020 15:22:31 -0800</lastBuildDate><atom:link href="https://evanczyzycki.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Literature Survey: A Benchmark for Interpretability Methods in Deep Neural Networks</title>
       <link>https://evanczyzycki.com/posts/02-06-2020-benchmark/</link>

@@ -1,48 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>https://eczy.github.io/</loc>
+    <loc>https://evanczyzycki.com/pages/about/</loc>
+    <lastmod>2023-10-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://evanczyzycki.com/</loc>
+    <lastmod>2023-10-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://evanczyzycki.com/pages/</loc>
+    <lastmod>2023-10-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://evanczyzycki.com/posts/02-06-2020-benchmark/</loc>
     <lastmod>2020-02-06T15:22:31-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eczy.github.io/post/2-6-2020/</loc>
+  </url><url>
+    <loc>https://evanczyzycki.com/posts/</loc>
     <lastmod>2020-02-06T15:22:31-08:00</lastmod>
+  </url><url>
+    <loc>https://evanczyzycki.com/categories/</loc>
+  </url><url>
+    <loc>https://evanczyzycki.com/tags/</loc>
   </url>
-  
-  <url>
-    <loc>https://eczy.github.io/post/</loc>
-    <lastmod>2020-02-06T15:22:31-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eczy.github.io/authors/eczy/</loc>
-  </url>
-  
-  <url>
-    <loc>https://eczy.github.io/authors/</loc>
-  </url>
-  
-  <url>
-    <loc>https://eczy.github.io/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://eczy.github.io/publication_types/</loc>
-  </url>
-  
-  <url>
-    <loc>https://eczy.github.io/publication/</loc>
-  </url>
-  
-  <url>
-    <loc>https://eczy.github.io/talk/</loc>
-  </url>
-  
-  <url>
-    <loc>https://eczy.github.io/tags/</loc>
-  </url>
-  
 </urlset>

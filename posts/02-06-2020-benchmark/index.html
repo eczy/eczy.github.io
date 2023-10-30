@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">Literature Survey: A Benchmark for Interpretability Methods in Deep Neural Networks | Evan Czyzycki</title>
+<meta property="og:title" content="Literature Survey: A Benchmark for Interpretability Methods in Deep Neural Networks | Evan Czyzycki" />
+<meta name="twitter:title" content="Literature Survey: A Benchmark for Interpretability Methods in Deep Neural Networks | Evan Czyzycki" />
+<meta itemprop="name" content="Literature Survey: A Benchmark for Interpretability Methods in Deep Neural Networks | Evan Czyzycki" />
+<meta name="application-name" content="Literature Survey: A Benchmark for Interpretability Methods in Deep Neural Networks | Evan Czyzycki" />
+<meta property="og:site_name" content="Evan Czyzycki" />
+
+<meta name="description" content="">
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+
+
+  <meta itemprop="image" content="https://evanczyzycki.com/" />
+  <meta property="og:image" content="https://evanczyzycki.com/" />
+  <meta name="twitter:image" content="https://evanczyzycki.com/" />
+  <meta name="twitter:image:src" content="https://evanczyzycki.com/" />
+
+
+
+
+    
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=2020-02-06T15:22:31-0800 />
+    <meta property="article:published_time" content=2020-02-06T15:22:31-0800 />
+
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "Literature Survey: A Benchmark for Interpretability Methods in Deep Neural Networks",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "2020-02-06",
+        "description": "",
+        "wordCount":  1263 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "2020-02-06",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "Evan Czyzycki"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.119.0">
+
+    
+
+    <link rel="canonical" href="https://evanczyzycki.com/posts/02-06-2020-benchmark/">
+    <link href="/style.min.9bd04d0fad85388343088ec85e9afd787ea003e72914d7f57df39c17ab2e7173.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://evanczyzycki.com/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    </head>
+<body data-theme = "dark" class="notransition">
+
+<script src="/js/theme.min.8961c317c5b88b953fe27525839672c9343f1058ab044696ca225656c8ba2ab0.js" integrity="sha256-iWHDF8W4i5U/4nUlg5ZyyTQ/EFirBEaWyiJWVsi6KrA="></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://evanczyzycki.com/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        Home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link active" href="/posts/">
+                        Posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/pages/about/">
+                        About
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">Literature Survey: A Benchmark for Interpretability Methods in Deep Neural Networks</h1>
+                
+                
+                <div class="post-meta">
+                    <time datetime="2020-02-06T15:22:31-08:00" itemprop="datePublished"> Feb 6, 2020 </time>
+                </div>
+                
+            </header><div class="page-content">
+                <p>With the ever-increasing adoption of complex and opaque AI systems such as deep learning, explainability and interpretability in AI is becoming increasingly relevant. The lack of understanding in the decision making mechanisms of these techniques has hindered their adoption in areas where incorrect decisions are catastrophic and in heavily-audited areas (e.g. medicine and finance). Methods which shed light toward how these systems function are paramount to improving the interpretability, reliability, and auditability of these systems.</p>
+<p>One of the most common interpretability tasks is estimating the influence of input features in the output of the model. A good understanding of feature importance is extremely helpful in understanding model prediction, isolating undesirable behavior, and proving model reliability. A recent <a href="https://papers.nips.cc/paper/9167-a-benchmark-for-interpretability-methods-in-deep-neural-networks.pdf">publication</a> by Google Brain submitted to NeurIPS 2019 evaluates and compares many recent interpretability methods regarding feature importance in large-scale image classification. They find that many popular interpretability methods do not produce good estimates of feature importance - in fact, many of these estimates are no better than a random baseline in the following proposed evaluation framework.</p>
+<h1 id="roar">ROAR</h1>
+<p>The authors propose a evaluation mechanism for feature importance methods which measures how the performance of a retrained model degrades as features with estimated high importance are removed. This method is named ROAR, an abbreviation of <strong>R</strong>em<strong>O</strong>ve <strong>A</strong>nd <strong>R</strong>etrain. The procedure for a given feature importance estimator $e$ is as follows:</p>
+<ol>
+<li>Rank the estimated feature importances generated by $e$ into an ordered set.</li>
+<li>For different degredation levels $t = [0, 10, &hellip;, 100]$, generate new datasets where the features corresponding to the top $t$ fraction of this ordered set are replaced with the per-channel mean in the original dataset.</li>
+<li>Re-train and re-evaluate a new model from random initialization on these new datasets, repeating 5 times for each $t$ to ensure variance in accuracy is low.</li>
+<li>Compare the accuracies of the original model and the new model.</li>
+</ol>
+<h2 id="why-do-we-need-to-retrain">Why do we need to retrain?</h2>
+<p>Retraining is very computationally expensive, but the authors argue this is necessary since models typically assume the train and test data come from similar distributions. Without retraining, it is unclear whether accuracy degredation is due to the introduction of artifacts outside the original training distribution or due to the actual removal of information.</p>
+<h1 id="estimators-under-consideration">Estimators under consideration</h1>
+<p>Below are the feature importance estimators used in the following experiments. See the <a href="#related-work">Related Work</a> section for details and references to additional publications.</p>
+<p>Base estimators:</p>
+<ul>
+<li>Gradients or Sensitivity Heatmaps</li>
+<li>Guided Backprop</li>
+<li>Integrated Gradients</li>
+</ul>
+<p>Ensembling methods:</p>
+<ul>
+<li>Classic SmoothGrad</li>
+<li>SmoothGrad$^2$</li>
+<li>VarGrad</li>
+</ul>
+<p>Control variants:</p>
+<ul>
+<li>Random
+<ul>
+<li>Random binary importance sampled from $Bernoulli(1-t)$ where $(1-t)$ is the probability of a positive outcome.</li>
+</ul>
+</li>
+<li>Sobel Edge Filter
+<ul>
+<li>Convolution of a hard-coded, separable, integer filter over an image which produces a ranking that assigns high scores to edge areas.</li>
+</ul>
+</li>
+</ul>
+<h1 id="experiments">Experiments</h1>
+<p>In experimentation, the authors used the ResNet-50 architecture for both generating feature importance estimates and retraining on modified datasets. The datasets used were ImageNet, Birdsnap, and Food 101. For each dataset and estimator, new train and test sets are generated with $t = [0, 10, 30, 50, 70, 90]$.</p>
+<p>In total, 18 estimators were evaluated (3 base estimators, 3 ensemble methods wrapped around each of these, and squared estimates for each configuration). Overall, 540 modified datasets were generated (180 new datasets for each original dataset).</p>
+<p>For each modified dataset, 5 randomly initialized ResNet-50 models are trained on the test set, and the average accuracy of these 5 models on the test set is reported.</p>
+<p>Below are the model performances on unmodified datasets:</p>
+<ul>
+<li>ImageNet: 76.68%</li>
+<li>Birdsnap: 66.65%</li>
+<li>Food 101: 84.54%</li>
+</ul>
+<h1 id="results">Results</h1>
+<h2 id="evaluating-the-random-ranking">Evaluating the Random Ranking</h2>
+<p>The authors find that when replacing even a large portion of inputs with the uninformative value, the model still performs very well. This suggests many pixels are likely redundant. Additionally, this provides support for the need for retraining. A traditional deletion metric (i.e. re-evalutation on the same model) causes a much sharper decrease in performance under a similar level of input degradation. This indicates that without retraining the model, it is impossible to separate the performance of the ranking from the degradation caused by the input modification.</p>
+<h2 id="evaluating-base-estimators">Evaluating Base Estimators</h2>
+<p>Every base estimator was found to perform consistently worse than the random baseline over all datasets and all thresholds with larger thresholds resulting in poorer performance. Additionally, across all datsets and thresholds, the base estimators perform comparably or worse than the sobel baseline. Using a traditional deletion metric, these baselines appear to work, but under ROAR they do not outperform baselines. This further supports the need for retraining.</p>
+<h2 id="evaluating-ensemble-approaches">Evaluating Ensemble Approaches</h2>
+<p>Classic SmoothGrad is comparable or worse than the base estimator it wraps. SmoothGrad-Squared and VarGrad, however, greatly improve accuracy. These methods outperform both control variants by a large margin as well as the base estimators they wrap. The overall ranking of estimator performance varies by dataset, which indicates the choice of best underlying estimator may vary by task.</p>
+<p>The reason why these estimators perform the best is an open research question at the time of writing. The authors observe that both of these methods appear to remove whole objects within concentrated areas from images whereas other methods remove less concentrated inputs over a wider area. Additional research must be done to understand why this happens and why this produces better results.</p>
+<h1 id="tldr">TL;DR</h1>
+<ul>
+<li>ROAR (i.e. removal of input features and retraining) is proposed as a feature importance comparison framework.</li>
+<li>Gradients, Integrated Gradients, Guided BackProp base estimators as well as SmoothGrad ensembles are comparable or worse than random assignment under ROAR (they don&rsquo;t work).</li>
+<li>SmoothGrad-Squared and VarGrad ensembles provide good estimates of feature importance under ROAR.</li>
+</ul>
+<h1 id="related-work">Related Work</h1>
+<h2 id="gradients-and-sensitivity-heatmaps">Gradients and Sensitivity Heatmaps</h2>
+<p>This <a href="https://arxiv.org/abs/0912.1128">paper</a> introduces gradients or sensitivity heatmaps as a form of feature importance in nonlinear classifiers. Under this framework, estimated explanations are local gradients that capture how a feature must be moved to influence model outcome. When gradients aren&rsquo;t able to be explicitly calculated, a probabilistic approximate can be used to generate estimated gradients instead.</p>
+<h2 id="guided-backpropagation">Guided Backpropagation</h2>
+<p>This <a href="https://arxiv.org/abs/1412.6806">paper</a> proposes the guided backpropagation method which aims to visualize input patterns that cause neuron activation in higher layers. This is named guided backpropagation because it adds an additional guidance signal from higher layers to usual backpropagation. Under this framework, gradient computation is done under a modified backpropagation setup that stops the backward flow of negative gradients, corresponding to the neurons which decrease the activation of the higher layer unit being visualized. This is a combination of normal backpropagation and &lsquo;deconvnet&rsquo; approaches.</p>
+<h2 id="integrated-gradients">Integrated Gradients</h2>
+<p>This <a href="https://arxiv.org/abs/1703.01365">paper</a> introduces an attribution method which assigns importance by decomposing output activation into contributions from the individual input features. In this particular method, this is done by interpolating a set of gradient estimates for values between a non-informative reference point (in this study, a black image) to the actual input. This interpolation involves an integral over gradients that can be approximated by summing over gradients at points occuring at sufficiently small integrals along the path from the reference point to the input (Riemman approximation).</p>
+<h2 id="smoothgradsmoothgrad2">SmoothGrad/SmoothGrad$^2$</h2>
+<p>This <a href="https://arxiv.org/abs/1706.03825">paper</a> proposes SmoothGrad as an ensemble wrapper method of estimating feature importance. In essence, SmoothGrad smooths the underlying gradient method by simply averaging the vanilla sensitivity maps of $n$ noisy images generated from the original image. SmoothGrad$^2$ is identical to SmoothGrad, but each estimate is squared before averaging. Both of these methods can be used to augment any gradient-based method such, as seen in this study.</p>
+<h2 id="vargrad">VarGrad</h2>
+<p>This <a href="https://arxiv.org/abs/1810.03307">paper</a> includes VarGrad as an ensemble method of estimating feature importance. This method is extremely similar to SmoothGrad (see above). The only difference is that the summation over vanilla sensitivity maps is replaced with the variance.</p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/eczy" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2023 Evan Czyzycki.
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noopener">Hugo blog awesome</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+
+
+    
+    <script src="https://evanczyzycki.com/js/main.min.35f435a5d8eac613c52daa28d8af544a4512337d3e95236e4a4978417b8dcb2f.js" integrity="sha256-NfQ1pdjqxhPFLaoo2K9USkUSM30&#43;lSNuSkl4QXuNyy8="></script>
+
+    
+
+</body>
+</html>
