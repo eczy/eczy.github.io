@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Evan Czyzycki</title>
-    <link>https://evanczyzycki.com/</link>
+    <link>https://www.evanczyzycki.com/</link>
     <description>Recent content on Evan Czyzycki</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://evanczyzycki.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.evanczyzycki.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://evanczyzycki.com/pages/about/</link>
+      <link>https://www.evanczyzycki.com/pages/about/</link>
       <pubDate>Sun, 29 Oct 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://evanczyzycki.com/pages/about/</guid>
+      <guid>https://www.evanczyzycki.com/pages/about/</guid>
       
       <description>I received my undergraduate degree in Computer Science at the University of Michigan in 2018, and I completed my master&amp;rsquo;s degree in machine learning at UCLA in 2022. My research background is in machine learning for healthcare systems, but I currently work as an SRE supporting cloud systems.</description>
       
@@ -20,10 +20,10 @@
     
     <item>
       <title>Literature Survey: A Benchmark for Interpretability Methods in Deep Neural Networks</title>
-      <link>https://evanczyzycki.com/posts/02-06-2020-benchmark/</link>
+      <link>https://www.evanczyzycki.com/posts/02-06-2020-benchmark/</link>
       <pubDate>Thu, 06 Feb 2020 15:22:31 -0800</pubDate>
       
-      <guid>https://evanczyzycki.com/posts/02-06-2020-benchmark/</guid>
+      <guid>https://www.evanczyzycki.com/posts/02-06-2020-benchmark/</guid>
       
       <description>With the ever-increasing adoption of complex and opaque AI systems such as deep learning, explainability and interpretability in AI is becoming increasingly relevant. The lack of understanding in the decision making mechanisms of these techniques has hindered their adoption in areas where incorrect decisions are catastrophic and in heavily-audited areas (e.g. medicine and finance). Methods which shed light toward how these systems function are paramount to improving the interpretability, reliability, and auditability of these systems.</description>
       
