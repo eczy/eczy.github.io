@@ -14,7 +14,40 @@
       
       <guid>https://www.evanczyzycki.com/pages/about/</guid>
       
-      <description>I received my undergraduate degree in Computer Science at the University of Michigan in 2018, and I completed my master&amp;rsquo;s degree in machine learning at UCLA in 2022. My research background is in machine learning for healthcare systems, but I currently work as an SRE supporting cloud systems.</description>
+      <description>&lt;p&gt;I received my undergraduate degree in Computer Science at the University of Michigan in 2018, and I completed my master&amp;rsquo;s degree in machine learning at UCLA in 2022. My research background is in machine learning for healthcare systems, but I currently work as an SRE supporting cloud systems.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Reading List</title>
+      <link>https://www.evanczyzycki.com/pages/reading/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.evanczyzycki.com/pages/reading/</guid>
+      
+      <description>&lt;h1 id=&#34;in-progress&#34;&gt;In Progress&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/15930573-game-theory&#34;&gt;Game Theory: An Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;2024&#34;&gt;2024&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://sre.google/workbook/table-of-contents/&#34;&gt;SRE Workbook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sre.google/sre-book/table-of-contents/&#34;&gt;SRE Book&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/11324722-the-righteous-mind&#34;&gt;The Righteous Mind: Why Good People Are Divided by Politics and Religion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/52009042-trade-wars-are-class-wars&#34;&gt;Trade Wars Are Class Wars: How Rising Inequality Distorts the Global Economy and Threatens International Peace&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/331227.A_Short_History_of_Progress&#34;&gt;A Short History of Progress&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;2023&#34;&gt;2023&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/44439416-chapterhouse&#34;&gt;Chapterhouse: Dune&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/44492287-heretics-of-dune&#34;&gt;Heretics of Dune&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/44439415-god-emperor-of-dune&#34;&gt;God Emperor of Dune&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/44492286-children-of-dune&#34;&gt;Children of Dune&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/44492285-dune-messiah&#34;&gt;Dune Messiah&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/44767458-dune&#34;&gt;Dune&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/25666050-algorithms-to-live-by&#34;&gt;Algorithms to Live By: The Computer Science of Human Decisions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&amp;hellip; and more predating this list.&lt;/p&gt;</description>
       
     </item>
     

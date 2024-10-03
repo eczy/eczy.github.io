@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Evan Czyzycki</title>
-    <link>https://www.evanczyzycki.com/posts/</link>
-    <description>Recent content in Posts on Evan Czyzycki</description>
+    <title>_Posts on Evan Czyzycki</title>
+    <link>http://localhost:1313/_posts/</link>
+    <description>Recent content in _Posts on Evan Czyzycki</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Feb 2020 15:22:31 -0800</lastBuildDate><atom:link href="https://www.evanczyzycki.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Feb 2020 15:22:31 -0800</lastBuildDate><atom:link href="http://localhost:1313/_posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Literature Survey: A Benchmark for Interpretability Methods in Deep Neural Networks</title>
-      <link>https://www.evanczyzycki.com/posts/02-06-2020-benchmark/</link>
+      <link>http://localhost:1313/_posts/02-06-2020-benchmark/</link>
       <pubDate>Thu, 06 Feb 2020 15:22:31 -0800</pubDate>
       
-      <guid>https://www.evanczyzycki.com/posts/02-06-2020-benchmark/</guid>
+      <guid>http://localhost:1313/_posts/02-06-2020-benchmark/</guid>
       
       <description>&lt;p&gt;With the ever-increasing adoption of complex and opaque AI systems such as deep learning, explainability and interpretability in AI is becoming increasingly relevant. The lack of understanding in the decision making mechanisms of these techniques has hindered their adoption in areas where incorrect decisions are catastrophic and in heavily-audited areas (e.g. medicine and finance). Methods which shed light toward how these systems function are paramount to improving the interpretability, reliability, and auditability of these systems.&lt;/p&gt;</description>
       
