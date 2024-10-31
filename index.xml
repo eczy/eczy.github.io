@@ -36,12 +36,11 @@
       
       <guid>https://www.evanczyzycki.com/pages/reading/</guid>
       
-      <description>&lt;h1 id=&#34;in-progress&#34;&gt;In Progress&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/15930573-game-theory&#34;&gt;Game Theory: An Introduction&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+      <description>&lt;!-- # In Progress --&gt;
 &lt;h1 id=&#34;2024&#34;&gt;2024&lt;/h1&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/35747076-accelerate&#34;&gt;Accelerate: Building and Scaling High Performing Technology Organizations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/15930573-game-theory&#34;&gt;Game Theory: An Introduction&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://sre.google/workbook/table-of-contents/&#34;&gt;SRE Workbook&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://sre.google/sre-book/table-of-contents/&#34;&gt;SRE Book&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/11324722-the-righteous-mind&#34;&gt;The Righteous Mind: Why Good People Are Divided by Politics and Religion&lt;/a&gt;&lt;/li&gt;
